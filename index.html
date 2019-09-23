@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<style> 
+
+	body{
+		width: 1000px;
+		height: 800px;
+		background-image: linear-gradient(#160663, #350569, #8628a8);
+	}
+
+		
+		#moon{
+			width:400px;
+			height:300px;
+			border-radius:50%;
+			font-size:100px;
+			text-align:center;
+			padding-top:100px;
+			background-image: url(https://media-s3-us-east-1.ceros.com/business-insider/images/2018/05/21/78621d8a3321732b1e3d032c456d3f2e/bigger-moon.png?imageOpt=1&fit=bounds&width=401);
+			position: absolute;
+			left: 30%;
+			top: 30%;
+
+		}
+	
+
+</style>
+</head>
+
+<body>
+<div id="moon"></div>
+
+<script>
+	
+var moon = document.getElementById('moon'); 
+
+moon.addEventListener("click", function(){console.log("hi");
+	// console.log(Math.round(Math.random()*9))
+moon.innerText = faces[Math.round(Math.random()*9)];
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+	var faces = [" ʘ_ʘ", "ಠ_ಠ", "ಥـْـِـِـِـْಥ", "=_=", "• ‿ •", "°□°", "*-*", "๏_๏", "◐ ‿ ◑","•̿Ĺ̯•" ];
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
