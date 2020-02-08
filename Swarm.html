@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	body{
+		background-color: black;
+		background-image: url("https://sartorialgeek.com/wp-content/uploads/2018/12/1545997227_930987_1545997284_noticia_normal1.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+	
+	.starlings{
+		width: 25px;
+		height: 25px;
+		background-color: white;
+		display: inline-block;
+		position: relative;
+		background-image: url("https://i.pinimg.com/originals/13/34/d9/1334d976fad40d62752614637eecf548.jpg");
+		background-size: contain;
+
+
+
+	}
+
+</style>
+
+</head>
+<body>
+
+	<div class="starlings"></div> 
+<script type="text/javascript">
+	
+
+	function makeStarling () {
+		var starling = document.createElement("div");
+			document.body.appendChild(starling);
+			starling.classList.add("starlings");
+
+
+			function setPosition () {
+			starling.style.left = Math.random()*1000+"px";
+			starling.style.top = Math.random()*1000+"px";
+			}
+			var move = setInterval(setPosition, 1000);
+
+	}
+
+for(var i=0; i<100; i=i+1){
+	makeStarling();
+}
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

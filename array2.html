@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#pot{
+		width: 800px;
+		height: 900px;
+			background-image:url(https://www.seibert-rice.com/wp-content/uploads/2016/10/american-hartford-pot-silo-2.png);
+			background-size: center;
+			background-image: cover;
+			background-repeat: no-repeat;
+			font-size: 100px;
+			color: green;
+
+
+}
+
+
+</style>
+</head>
+<body>
+<button>Plant a Plant</button>
+<div id="pot"></div>
+
+
+
+<script type="text/javascript">
+
+var plants = [
+"cactus","zinnia","sprout" ]
+	
+var pot = document.getElementById("pot");
+pot.addEventListener("click", 
+	function(){ 
+	pot.innerText = plants[Math.floor(
+		Math.random()*3))];
+
+
+	});
+
+
+
+
+</script>
+</body>
+</html>
