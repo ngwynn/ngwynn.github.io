@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">	
+	function makeStarling () {
+		var starling = document.createElement("div");
+			document.body.appendChild(starling);
+			starling.classList.add("starlings");
+
+
+			function setPosition () {
+			starling.style.left = Math.random()*1000+"px";
+			starling.style.top = Math.random()*900+"px";
+			}
+			var move = setInterval(setPosition, 1000);
+
+	}
+
+for(var i=0; i<100; i=i+1){
+	makeStarling();
+}
+
+
+
+var starling = document.getElementById('starling');
+
+
+    function changeColor () {
+        var randomNumber = Math.round(Math.random() * 360);
+        starling.style.filter = "hue-rotate(" + randomNumber + "deg)"
+        console.log('changing color');
+    };
+
+    setInterval(changeColor, 500)
+
+
+</script>
+
+	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+<style type="text/css">
+	body{
+		background-color: #FFD8E8;
+
+	}
+	h1{
+	font-family: Mansalva;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px black;
+
+	}
+
+	.starlings{
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		position: relative;
+		background-image: url("https://images.squarespace-cdn.com/content/v1/5ba2c48c5b409b1d2ccd34cf/1563661768367-TBECVC8R2525CLZ8DWVM/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0topjEaZcWjtmMYdCWL4dkGbxs35J-ZjFa9s1e3LsxrX8g4qcOj2k2AL08mW_Htcgg/Cookie+flavor+17+transparent.png");
+		background-size: cover;
+
+
+
+
+</style>
+</head>
+<body>
+<h1 id = "h1" onclick="makeStarling()" >I just wanted to say that...</h1>
+<script type="text/javascript">
+
+	var element = document.getElementById("h1");
+
+	.addEventListener("click",function(){
+		element.innerHTML = "New text!";
+
+
+
+	})
+</script>
+
+
+
+
+
+</body>
+</html>
