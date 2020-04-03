@@ -34,8 +34,7 @@
 		background-image: url("https://data.whicdn.com/images/263440191/original.gif");
 		background-size: contain;
 		background-repeat: no-repeat;
-		margin: auto;
-  		width: 60%;
+
   		padding: 10px;
 	}
 	#img2{
@@ -44,10 +43,25 @@
 		background-image: url("https://steamuserimages-a.akamaihd.net/ugc/800990260010733234/E0C09E517DC9CF4AD6887F9BF621088EE2039F97/");
 		background-size: contain;
 		background-repeat: no-repeat;
-		margin: auto;
-  		width: 30%;
+
 
 	}
+	a{
+		color: magenta;
+		text-decoration: none;
+		background: rgba(9,26,76);
+		font-family: 'Geo';
+		font-size: 25px;
+	}
+	a:hover {
+		color: darkcyan;
+	}
+
+	.row: :after {
+  		content: "";
+ 		clear: both;
+ 		display: table;
+
 </style>
 </head>
 
@@ -57,10 +71,28 @@
 <h1>NATALIE'S WEBSITE</h1>
 <h2>CREATED CIRCA. 2019</h2>
 
-<div>
+<p><a href="https://ngwynn.github.io/index.html">MY CODING JOURNAL</a></p>
+<p><a href="moon.html">MOON FACES</a></p>
+<p><a href="Swarm.html">BANDERSNATCH SWARM</a></p>
+
+
 <div id="img1"></div>
 <div id="img2"></div>
+
+<div class="row">
+  <div class="column">
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/800990260010733234/E0C09E517DC9CF4AD6887F9BF621088EE2039F97/" alt="Snow" style="width:40%">
+  </div>
+  <div class="column">
+    <img src="https://data.whicdn.com/images/263440191/original.gif" style="width:40%">
 </div>
+  </div>
+</div>
+
+
+
+
+
 
 </body>
 

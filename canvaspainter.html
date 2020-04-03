@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+
+<h1>Painter</h1>
+<canvas id = "painting" width="500" height="500" ></canvas>
+<h2>Oui Oui Mon Ami! Become an artiste!</h2>
+
+
+
+</head>
+
+<style type="text/css">
+	#img{
+		width: 100px;
+		height: 100px;
+		background-image: url("https://webcomicms.net/sites/default/files/clipart/147806/cartoon-french-man-147806-4839110.gif");
+		background-size: contain;
+		background-repeat: no-repeat;
+		  display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+
+}
+	#painting {
+		border: 2px solid black;
+	}
+
+	h2{
+		font-family:'Abel', sans-serif;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+</style>
+
+
+
+
+
+
+<body>
+
+
+
+
+
+<script type="text/javascript">
+	var colors=["#ff9078","#ffb078","#f7ef74","#a6f26f","#66d9cf","#85a7ff","#bb7dfa"];
+var Canvas  = document.getElementById("painting");
+var myContext = Canvas.getContext("2d");
+Canvas.addEventListener("mousemove",function(){
+  drawRect(event.pageX,event.pageY);
+  },true);
+function randomColor(){
+  return colors[Math.floor(Math.random() * 8)];
+}
+function drawRect(mX,mY){
+  myContext.fillStyle=randomColor();
+  var h=Math.floor(Math.random() * 30)+20;
+  var w=Math.floor(Math.random() * 30)+20;
+  myContext.fillRect(mX-10,mY-80,w,h);
+}
+</script>
+
+</body>
+</html>
